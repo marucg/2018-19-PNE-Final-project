@@ -108,6 +108,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
         id = data[0]['id']
         return id
 
+#ARREGLAR
     def gene_sequence(self, gene,  main_page):
         try:
             id = self.id_genes(gene)
