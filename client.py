@@ -37,6 +37,6 @@ for data in endpoints:
     data1 = r1.read().decode("utf-8")
     information = json.loads(data1)
     print(information)
-print("Response received: \n", str(r1.status) + ', ', r1.reason)
+print("\nResponse received: \n", str(r1.status) + ', ', r1.reason)
 
 
