@@ -328,21 +328,7 @@ Endpoint = http://localhost:8000/geneInfo?gene=DDX11L1
         </head>
         <body style="background-color: orange">
         <h3>---Link for returning to the Main page---</h3>
-        <a href="http://localhost:8000/">Main Page</a><h2>Information of the gene: DDX11L1</h2><p>ID: ENSG00000223972</p><p>Length: 2541</p><p>Start: 11869</p><p>End: </h4>14409</p><p>Chromosome: GRCh38 Region Name: 1</p>
-
-
-
-Endpoint = http://localhost:8000/geneInfo?gene=WASH7P
-<!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <title>Data</title>
-            <h1>Information Requested<h1>
-        </head>
-        <body style="background-color: orange">
-        <h3>---Link for returning to the Main page---</h3>
-        <a href="http://localhost:8000/">Main Page</a><h2>Information of the gene: WASH7P</h2><p>ID: ENSG00000227232</p><p>Length: 15167</p><p>Start: 14404</p><p>End: </h4>29570</p><p>Chromosome: GRCh38 Region Name: 1</p>
+        <a href="http://localhost:8000/">Main Page</a><h2>Information of the gene: DDX11L1</h2><p>ID: ENSG00000233614</p><p>Length: 2536</p><p>Start: 11555</p><p>End: </h4>14090</p><p>Chromosome: GRCh38 Region Name: 16</p>
 
 
 
@@ -607,12 +593,8 @@ Endpoint = http://localhost:8000/geneInfo?gene=frat1&json=1
 
 
 Endpoint = http://localhost:8000/geneInfo?gene=DDX11L1&json=1
-[{"Gene": "DDX11L1", "ID": "ENSG00000223972", "Length": "2541", "Start": "11869", "End": "14409", "Chromosome": "GRCh38", "Region_name": "1"}]
+[{"Gene": "DDX11L1", "ID": "ENSG00000233614", "Length": "2536", "Start": "11555", "End": "14090", "Chromosome": "GRCh38", "Region_name": "16"}]
 
-
-
-Endpoint = http://localhost:8000/geneInfo?gene=WASH7P&json=1
-[{"Gene": "WASH7P", "ID": "ENSG00000227232", "Length": "15167", "Start": "14404", "End": "29570", "Chromosome": "GRCh38", "Region_name": "1"}]
 
 
 ---> WHEN IT CONTAINS AN INVALID PARAMETER
@@ -680,7 +662,9 @@ url = ['/listSpecies?limit=5&json=1', '/listSpecies?json=1', '/karyotype?specie=
 
 Connecting to server:
  Server: 127.0.0.1, Port: 8000
+
 ---Information obtained---
+
 [{'Species': ['Mouse', 'Human', 'Guinea Pig', 'Mouse CBA/J', 'Midas cichlid']}]
 [{'Species': ['Mouse', 'Human', 'Guinea Pig', 'Mouse CBA/J', 'Midas cichlid', 'Anole lizard', 'Capuchin', 'Ballan wrasse', 'Leopard', 'Fugu', 'Black snub-nosed monkey', 'Zig-zag eel', 'Blue-crowned manakin', 'Damara mole rat', 'Opossum', 'Donkey', 'Platyfish', 'Little spotted kiwi', 'Ruff', 'Stickleback', 'Chinese hamster PICR', 'Steppe mouse', 'Indian medaka', 'Upper Galilee mountains blind mole rat', 'Abingdon island giant tortoise', 'Spiny chromis', 'Asian bonytongue', 'Tasmanian devil', 'Chicken', 'Coelacanth', 'Helmeted guineafowl', 'Mouse A/J', 'Sailfin molly', 'Koala', 'Mouse FVB/NJ', 'Chinese hamster CHOK1GS', 'Mouse LP/J', 'Naked mole-rat female', 'Spoon-billed sandpiper', 'Duck', 'Bolivian squirrel monkey', 'Bengalese finch', 'Marmoset', 'Sheep', 'Olive baboon', 'Crab-eating macaque', 'Mainland tiger snake', 'Goat', 'Mummichog', 'American black bear', 'Mouse NZO/HlLtJ', 'Wallaby', 'Dolphin', 'Western mosquitofish', 'Cat', 'Bonobo', 'Gibbon', 'Vervet-AGM', 'Cow', 'Clown anemonefish', 'Shrew mouse', 'Japanese quail', 'Tarsier', 'Great spotted kiwi', 'Pig-tailed macaque', 'Tuatara', 'Pink-footed goose', 'Climbing perch', 'Spotted gar', 'Golden snub-nosed monkey', 'Daurian ground squirrel', 'Amazon molly', 'Turbot', 'Algerian mouse', 'Lamprey', 'Xenopus', "Agassiz's desert tortoise", 'American bison', 'Mouse 129S1/SvImJ', 'Channel catfish', 'Degu', 'Angola colobus', 'Golden-collared manakin', 'Eastern happy', 'Greater bamboo lemur', 'Mouse WSB/EiJ', 'Armadillo', 'Mangrove rivulus', 'Mouse DBA/2J', 'Arctic ground squirrel', 'Gorilla', 'Mouse Lemur', 'Drill', 'Central bearded dragon', 'American mink', 'Great Tit', 'Macaque', 'Platypus', 'Japanese medaka HNI', 'Hagfish', 'Dingo', 'Zebrafish', 'Mouse NOD/ShiLtJ', 'Bicolor damselfish', 'Long-tailed chinchilla', 'Mouse C57BL/6NJ', 'Mexican tetra', 'Squirrel', 'Alpaca', 'Australian saltwater crocodile', 'White-throated sparrow', 'Orange clownfish', 'Tiger', 'Turkey', 'Ugandan red Colobus', 'Alpine marmot', 'Common canary', 'Okarito brown kiwi', 'Argentine black and white tegu', 'Sloth', 'Ryukyu mouse', 'Shrew', 'Zebra Finch', 'Gelada', 'Tiger tail seahorse', 'Brazilian guinea pig', 'Periophthalmus magnuspinnatus', "Ma's night monkey", 'Microbat', 'Pig', "Coquerel's sifaka", 'Drosophila melanogaster', 'Makobe Island cichlid', 'Lesser hedgehog tenrec', 'Dark-eyed junco', 'Red fox', 'Chimpanzee', 'Chinese hamster CriGri', 'Greater amberjack', 'Hedgehog', 'Elephant', 'Lyretail cichlid', 'Chinese softshell turtle', 'Prairie vole', 'Ocean sunfish', 'Polar bear', 'Emu', 'Rabbit', 'Monterrey platyfish', 'Sheepshead minnow', 'C.intestinalis', 'Red-bellied piranha', 'Northern pike', 'Pika', 'Ferret', 'C.savignyi', 'Mongolian gerbil', 'Paramormyrops kingsleyae', 'Lesser Egyptian jerboa', 'Kangaroo rat', 'Sooty mangabey', 'Tilapia', 'Orangutan', 'Painted turtle', 'Zebra mbuna', 'Horse', 'Golden Hamster', 'Megabat', 'Yellowtail amberjack', 'Blue tit', 'Mouse PWK/PhJ', 'Cod', "Burton's mouthbrooder", 'Saccharomyces cerevisiae', 'Tongue sole', 'Dog', 'Swamp eel', 'Panda', 'American beaver', 'Budgerigar', 'Northern American deer mouse', 'Flycatcher', 'Wild yak', 'Mouse BALB/cJ', 'Mouse CAST/EiJ', 'Rat', 'Bushbaby', 'Naked mole-rat male', 'Caenorhabditis elegans', 'Guppy', 'Japanese medaka HSOK', 'Tetraodon', 'Chilean tinamou', 'Tree Shrew', 'Mouse C3H/HeJ', 'Shortfin molly', 'Japanese medaka HdrR', 'Hyrax', 'Mouse AKR/J']}]
 [{'Specie': 'Mouse', 'Karyotype': ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', 'X', 'Y', 'MT']}]
@@ -689,6 +673,7 @@ Connecting to server:
 [{'Gene': 'FRAT1', 'ID': 'ENSG00000165879', 'Length': '2649', 'Start': '97319267', 'End': '97321915', 'Chromosome': 'GRCh38', 'Region_name': '10'}]
 [{'Gene': 'FRAT1', 'Length': '2649', 'Percentages': [{'A': '18.0 %', 'C': '30.2 %', 'G': '32.0 %', 'T': '19.7 %'}]}]
 [{'Genes': ['DDX11L1', 'WASH7P', 'MIR6859-1', 'MIR1302-2HG']}]
+
 Response received:
  200,  OK
 
