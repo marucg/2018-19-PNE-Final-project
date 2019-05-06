@@ -195,8 +195,12 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
             total_info = json.loads(info_client)
             info_client_seq = self.client('''/sequence/id/''' + id + '''?content-type=application/json''')
             info_seq = json.loads(info_client_seq)
+            names = []
             for elements in total_info:
-                if elements['external_name'] == gene.upper():
+                genes = elements['external_name']
+                names.append(genes)
+            if gene.upper() in names:
+                for elements in total_info:
                     start = elements['start']
                     end = elements['end']
                     chromo = elements['assembly_name']
@@ -216,6 +220,12 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                         content_chromo = '<p>Chromosome: ' + chromo + ' ' + 'Region Name: ' + sequence_region + '</p>'
                         content = main_page + "<h2>Information of the gene: " + gene.upper() + "</h2>" + content_id + content_length
                         content = content + content_start + content_end + content_chromo
+            else:
+                if format == 'json=1':
+                    content = ['-ERROR, invalid parameter-  Please try again.']
+                else:
+                    with open('error_parameter.html', 'r') as r:
+                        content = r.read()
         except TypeError:
             if format == 'json=1':
                 content = ['-ERROR, invalid parameter-  Please try again.']
