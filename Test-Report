@@ -318,7 +318,7 @@ Endpoint = http://localhost:8000/geneInfo?gene=frat1
 
 
 
-Endpoint = http://localhost:8000/geneInfo?gene=DDX11L1
+Endpoint = http://localhost:8000/geneInfo?gene=WASH7P
 <!DOCTYPE html>
         <html lang="en">
         <head>
@@ -328,9 +328,7 @@ Endpoint = http://localhost:8000/geneInfo?gene=DDX11L1
         </head>
         <body style="background-color: orange">
         <h3>---Link for returning to the Main page---</h3>
-        <a href="http://localhost:8000/">Main Page</a><h2>Information of the gene: DDX11L1</h2><p>ID: ENSG00000233614</p><p>Length: 2536</p><p>Start: 11555</p><p>End: </h4>14090</p><p>Chromosome: GRCh38 Region Name: 16</p>
-
-
+        <a href="http://localhost:8000/">Main Page</a><h2>Information of the gene: WASH7P</h2><p>ID: ENSG00000227232</p><p>Length: 15167</p><p>Start: 29554</p><p>End: </h4>31109</p><p>Chromosome: GRCh38 Region Name: 1</p>
 
 ---> WHEN IT CONTAINS AN INVALID PARAMETER
 Endpoint = http://localhost:8000/geneInfo?gene=hello
@@ -592,9 +590,8 @@ Endpoint = http://localhost:8000/geneInfo?gene=frat1&json=1
 
 
 
-Endpoint = http://localhost:8000/geneInfo?gene=DDX11L1&json=1
-[{"Gene": "DDX11L1", "ID": "ENSG00000233614", "Length": "2536", "Start": "11555", "End": "14090", "Chromosome": "GRCh38", "Region_name": "16"}]
-
+Endpoint = http://localhost:8000/geneInfo?gene=WASH7P&json=1
+[{"Gene": "WASH7P", "ID": "ENSG00000227232", "Length": "15167", "Start": "29554", "End": "31109", "Chromosome": "GRCh38", "Region_name": "1"}]
 
 
 ---> WHEN IT CONTAINS AN INVALID PARAMETER
