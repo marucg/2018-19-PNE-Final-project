@@ -62,6 +62,11 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                     content = ['Number of species requested = 0']
                 else:
                     content = titles + "<p>The number of species requested = 0</p>"
+            elif int(limit) < 0:
+                if format == 'json=1':
+                    content = ['The number of species requested is negative']
+                else:
+                    content = titles + "<p>The number of species requested is negative</p>"
         except ValueError:
             if format == 'json=1':
                 content = ['-ERROR, invalid parameter-  Please try again.']
